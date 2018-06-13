@@ -246,6 +246,9 @@ header {
     width: 200px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    .date {
+      color: rgb(100, 100, 100);
+    }
     &.act {
       border-top: 6px solid #f96681;
     }

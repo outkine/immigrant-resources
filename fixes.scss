@@ -4,16 +4,16 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 body * {
   margin: 0;
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
 button,
 input,
 select {
