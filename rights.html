@@ -52,7 +52,7 @@
           </div>
         </div>
         <p>As the number of undocumented immigrants entering the United States increased over time, so did the amount of attention dedicated to them. One good example of this is the case <em>Arizona v. United States</em>, in which Arizona increased criminal punishments for persons with undocumented immigration status within its state borders. However, the Supreme Court did not strike down all the parts of that law. The court maintained that law enforcement authorities could (and should) check the undocumented status of legally detained individuals.</p>
-        <p>The Trump administration has passed two major pieces of legislation on immigration. The first is the travel ban, which has been revised three times. The first version banned foreigners from predominantly Muslim countries from visiting the United States for 90 days, suspended access to all Syrian refugees, and prohibited all other refugees for 120 days. After facing backlash from a number of federal courts, Trump released a revised version of the ban that exempted foreigners with visas and green cards, and exempted Iraq from the ban. After facing further criticism, President Trump released a final, third version, which focused solely on stopping travel from predominantly Muslim countries and North Korea. Second Circuit and federal courts still upheld their block, but the Supreme Court allowed the new version to go into effect while it reviews the 3.0 ban in<em>Hawaii v. Trump.</em><sup>5</sup> The Supreme Court is expected to adjudicate on this issue within the coming weeks.</p>
+        <p>The Trump administration has passed two major pieces of legislation on immigration. The first is the travel ban, which has been revised three times. The first version banned foreigners from predominantly Muslim countries from visiting the United States for 90 days, suspended access to all Syrian refugees, and prohibited all other refugees for 120 days. After facing backlash from a number of federal courts, Trump released a revised version of the ban that exempted foreigners with visas and green cards, and exempted Iraq from the ban. After facing further criticism, President Trump released a final, third version, which focused solely on stopping travel from predominantly Muslim countries and North Korea. Second Circuit and federal courts still upheld their block, but the Supreme Court allowed the new version to go into effect while it reviews the 3.0 ban in<em>Hawaii v. Trump.</em><sup>4</sup> The Supreme Court is expected to adjudicate on this issue within the coming weeks.</p>
         <p>One of Trump's biggest campaign promises was repealing DACA, which is an Obama-age legislation aimed at protecting undocumented immigrant children.</p>
         <div class="brief">
           <p class="title">DACA (<a href="https://undocu.berkeley.edu/legal-support-overview/what-is-daca/">more information</a>)</p>
@@ -69,18 +69,18 @@
             <li>Present in the US on June 15, 2012 and when you apply</li>
             <li>Had no documents before June 15, 2012</li>
             <li>Currently studying or graduated from high school</li>
-            <li>Have not been convicted of a felony<sup>6</sup></li>
+            <li>Have not been convicted of a felony<sup>5</sup></li>
           </ul>
         </div>
-        <p>This repeal was contested, and the DACA program is still taking renewels. However, the program has indefinetely delayed all new applications. This, in many ways, is proof that the US is still struggling to acknowledge and protect all new immigrants. While history has seen many cases and acts aimed at protecting immigrants, many states still deny many benefits to undocumented immigrants<sup>2</sup>. 
+        <p>This repeal was contested, and the DACA program is still taking renewels. However, the program has indefinetely delayed all new applications. This, in many ways, is proof that the US is still struggling to acknowledge and protect all new immigrants. While history has seen many cases and acts aimed at protecting immigrants, many states still deny many benefits to undocumented immigrants<sup>2</sup>.
         </p>
         <p>However, it is important to remember that every person in the United States is still entitled to the fundamental rights listed in the constitution (<a href="./government.html">see sumaries</a>). One of these is a right to due process, which was reaffirmed by <em>Zadvydas v. Davis</em>:
         </p>
         <div class="quote">
           <img src="assets/quote.svg">
-          <p>But once an alien enters the country, the legal circumstance changes, for the Due Process Clause applies to all “persons” within the United States, including aliens, whether their presence here is lawful, unlawful, temporary, or permanent.<sup>7</sup></p>
+          <p>But once an alien enters the country, the legal circumstance changes, for the Due Process Clause applies to all “persons” within the United States, including aliens, whether their presence here is lawful, unlawful, temporary, or permanent.<sup>6</sup></p>
         </div>
-        <p>Another key right is the protection from unlawful searches and seizures. This right has been especially contested with the recent increases in Immigration and Customs Enforcement (ICE) searches and seizures. Legally speaking, ICE officials may not search or enter your home unless they have a warrant.<sup>8</sup></p>
+        <p>Another key right is the protection from unlawful searches and seizures. This right has been especially contested with the recent increases in Immigration and Customs Enforcement (ICE) searches and seizures. Legally speaking, ICE officials may not search or enter your home unless they have a warrant.<sup>7</sup></p>
          <div class="brief">
           <p class="title">ICE FAQ (<a href="https://www.nilc.org/get-involved/community-education-resources/know-your-rights/imm_enfrcmt_homework_rts_2008-05-2/">more information</a>)</p>
           <p class="question">Can ICE enter my home?</p>
@@ -88,8 +88,8 @@
           <p class="question">Can ICE enter my work?</p>
           <p>Law enforcement agencies are usually not allowed to enter workplaces. If an officer gets permission, remember that you have a right to remain silent and a right to speak to a lawyer before answering questions.</p>
           <p class="question">How can I protect myself?</p>
-          <p>Make sure that you know who to reach out to in case of an emergency. Also, research immigration attorneys that could help in the case of your detainment.<sup>8</sup></p> 
-        </div> 
+          <p>Make sure that you know who to reach out to in case of an emergency. Also, research immigration attorneys that could help in the case of your detainment.<sup>7</sup></p>
+        </div>
         <p>Knowing and remembering all of your rights is one of the best ways to stay safe.</p>
       <p>
     </div>
@@ -107,7 +107,7 @@
             this.setOffset(this.tiles[i].date, el)
             // el.style.left = `${(rnd(this.$refs.tiles.clientWidth - el.clientWidth) + this.$refs.tiles.offsetLeft) - el.offsetLeft}px`
             let distance = this.$refs.tiles.clientWidth - el.clientWidth
-            if (distance >= el.clientWidth) distance = el.clientWidth  
+            if (distance >= el.clientWidth) distance = el.clientWidth
             if (this.tiles[i].move) el.style.left = `${(distance + this.$refs.tiles.offsetLeft) - el.offsetLeft}px`
           }
         },
@@ -128,7 +128,7 @@
         methods: {
           setOffset: function(date, el) {
             const destination = (date - this.tiles[0].date) * this.$refs.drawing.clientHeight / (this.tiles[this.tiles.length - 1].date - this.tiles[0].date)
-            const trueDestination = destination + this.$refs.drawing.offsetTop 
+            const trueDestination = destination + this.$refs.drawing.offsetTop
             el.style.top = `${trueDestination - el.offsetTop}px`
           }
         }
