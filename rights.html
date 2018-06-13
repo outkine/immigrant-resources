@@ -103,7 +103,7 @@
             this.setOffset(this.tiles[i].date, el)
             // el.style.left = `${(rnd(this.$refs.tiles.clientWidth - el.clientWidth) + this.$refs.tiles.offsetLeft) - el.offsetLeft}px`
             let distance = this.$refs.tiles.clientWidth - el.clientWidth
-            if (distance >= el.clientWidth) distance = el.clientWidth 
+            if (distance >= el.clientWidth) distance = el.clientWidth  
             if (this.tiles[i].move) el.style.left = `${(distance + this.$refs.tiles.offsetLeft) - el.offsetLeft}px`
           }
         },
