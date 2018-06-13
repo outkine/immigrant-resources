@@ -253,6 +253,9 @@ header {
   @include shadow;
   padding: 20px;
   border-top: 6px solid #f96681;
+  &.yellow {
+    border-top: 6px solid #e0c35b;
+  }
   position: relative;
   .title {
     font-weight: bold;
@@ -298,4 +301,8 @@ header {
 
 li {
   font-size: 15px;
+}
+
+img.decoration {
+  margin: auto;
 }
