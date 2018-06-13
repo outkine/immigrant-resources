@@ -18,24 +18,26 @@
         <p>There has recently been a lot of turmoil in the US in regards to immigration. The Trump administration made several important decisions, including imposing a travel ban on Muslim countries and repealing DACA. In order to understand the backlash, it's important to take into account some history.</p>
         <p>One of the first mentions of immigration in the constitution occurs in Section 8 of Article I, and entrusts the legislative branch with the power “establish an uniform Rule of Naturalization”<sup>1</sup>, or regulate immigration. Congress only actively got involved in this process in the late 18th century, however. Here is a timeline of US government actions that paved the way for modern-day immigration laws.</p>
         <div class="timeline" id="timeline">
-          <div class="drawing" ref="drawing">
-            <div ref="d1800">
-              <p class="date">1800</p>
-            </div>
-            <div ref="d1900">
-              <p class="date">1900</p>
-            </div>
-            <div ref="d2000">
-              <p class="date">2000</p>
-            </div>
-          </div>
-          <div class="tiles" ref="tiles">
-            <div v-for="tile in tiles" :class="[tile.type, 'tile']">
-              <div class="header">
-                <p class="title">{{ tile.title }}</p>
-                <p class="date">{{ tile.date }}</p>
+          <div class="shell">
+            <div class="drawing" ref="drawing">
+              <div ref="d1800">
+                <p class="date">1800</p>
               </div>
-              <p class="body" v-html="tile.body"></p>
+              <div ref="d1900">
+                <p class="date">1900</p>
+              </div>
+              <div ref="d2000">
+                <p class="date">2000</p>
+              </div>
+            </div>
+            <div class="tiles" ref="tiles">
+              <div v-for="tile in tiles" :class="[tile.type, 'tile']">
+                <div class="header">
+                  <p class="title">{{ tile.title }}</p>
+                  <p class="date">{{ tile.date }}</p>
+                </div>
+                <p class="body" v-html="tile.body"></p>
+              </div>
             </div>
           </div>
           <div class="info">
