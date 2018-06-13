@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Immigrant Resources</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+      <link href="index.scss" rel="stylesheet">
+  </head>
+  <body>
+            <header>
+        <h1>Get information by state</h1>
+        <a href="./index.html"><img src="assets/home.svg"></a>
+      </header>
+      <div id="app">
+    <div id="states">
+      <a href="https://immigration.findlaw.com/immigration-laws-and-resources/alabama-state-immigration-laws.html"><img src="assets/states/Alabama.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/alaska-state-immigration-laws.html"><img src="assets/states/Alaska.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/arizona-state-immigration-laws.html"><img src="assets/states/Arizona.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/arkansas-state-immigration-laws.html"><img src="assets/states/Arkansas.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/california-state-immigration-laws.html"><img src="assets/states/California.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/colorado-state-immigration-laws.html"><img src="assets/states/Colorado.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/connecticut-state-immigration-laws.html"><img src="assets/states/Connecticut.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/delaware-state-immigration-laws.html"><img src="assets/states/Delaware.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/florida-state-immigration-laws.html"><img src="assets/states/Florida.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/georgia-state-immigration-laws.html"><img src="assets/states/Georgia.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/hawaii-state-immigration-laws.html"><img src="assets/states/Hawaii.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/idaho-state-immigration-laws.html"><img src="assets/states/Idaho.svg"></a><a style="cursor: pointer;" @click="show = true"><img src="assets/states/Illinois.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/indiana-state-immigration-laws.html"><img src="assets/states/Indiana.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/iowa-state-immigration-laws.html"><img src="assets/states/Iowa.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/kansas-state-immigration-laws.html"><img src="assets/states/Kansas.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/kentucky-state-immigration-laws.html"><img src="assets/states/Kentucky.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/louisiana-state-immigration-laws.html"><img src="assets/states/Louisiana.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/maine-state-immigration-laws.html"><img src="assets/states/Maine.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/maryland-state-immigration-laws.html"><img src="assets/states/Maryland.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/massachusetts-state-immigration-laws.html"><img src="assets/states/Massachusetts.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/michigan-state-immigration-laws.html"><img src="assets/states/Michigan.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/minnesota-state-immigration-laws.html"><img src="assets/states/Minnesota.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/mississippi-state-immigration-laws.html"><img src="assets/states/Mississippi.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/missouri-state-immigration-laws.html"><img src="assets/states/Missouri.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/montana-state-immigration-laws.html"><img src="assets/states/Montana.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/nebraska-state-immigration-laws.html"><img src="assets/states/Nebraska.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/nevada-state-immigration-laws.html"><img src="assets/states/Nevada.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/new-hampshire-state-immigration-laws.html"><img src="assets/states/New Hampshire.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/new-jersey-state-immigration-laws.html"><img src="assets/states/New Jersey.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/new-mexico-state-immigration-laws.html"><img src="assets/states/New Mexico.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/new-york-state-immigration-laws.html"><img src="assets/states/New York.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/north-carolina-state-immigration-laws.html"><img src="assets/states/North Carolina.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/north-dakota-state-immigration-laws.html"><img src="assets/states/North Dakota.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/ohio-state-immigration-laws.html"><img src="assets/states/Ohio.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/oklahoma-state-immigration-laws.html"><img src="assets/states/Oklahoma.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/oregon-state-immigration-laws.html"><img src="assets/states/Oregon.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/pennsylvania-state-immigration-laws.html"><img src="assets/states/Pennsylvania.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/rhode-island-state-immigration-laws.html"><img src="assets/states/Rhode Island.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/south-carolina-state-immigration-laws.html"><img src="assets/states/South Carolina.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/south-dakota-state-immigration-laws.html"><img src="assets/states/South Dakota.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/tennessee-state-immigration-laws.html"><img src="assets/states/Tennessee.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/texas-state-immigration-laws.html"><img src="assets/states/Texas.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/utah-state-immigration-laws.html"><img src="assets/states/Utah.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/vermont-state-immigration-laws.html"><img src="assets/states/Vermont.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/virginia-state-immigration-laws.html"><img src="assets/states/Virginia.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/washington-state-immigration-laws.html"><img src="assets/states/Washington.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/west-virginia-state-immigration-laws.html"><img src="assets/states/West Virginia.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/wisconsin-state-immigration-laws.html"><img src="assets/states/Wisconsin.svg"></a><a href="https://immigration.findlaw.com/immigration-laws-and-resources/wyoming-state-immigration-laws.html"><img src="assets/states/Wyoming.svg"></a>
+
+          <!-- <a v-for="state in states" :href="`https://immigration.findlaw.com/immigration-laws-and-resources/${format(state)}-state-immigration-laws.html`"><img :src="`assets/states/${state}.svg`"></a> -->
+
+      </div>
+      <div v-show="show">
+        <div class="page info">
+      <div class="content">
+        <h1>Illinois</h1>
+        <p>The legislation that defines Illinois immigration policy is the TRUST Act. Signed in 2017, it makes it easier for undocumented immigrants to live in Illinois. The act includes two key provisions:</p>
+        <ul>
+          <li>Local law enforcement cannot detain on behalf of ICE.</li>
+          <li>Local officials cannot inquire about immigration status.<sup>9</sup></li>
+        </ul>
+        <p>The second provision is especially important, as it overrides the precent set by <em>Arizona v. United States</em>. This means that illegal immigrants should be significantly more comfortable with reporting crimes to the police.</p>
+        <p>One of the largest issues facing police departments around the country is a decreased rate of crime reports from the immigrant community - for example, sexual assault and domestic violence are down as much as 50 percent<sup>10</sup>. The TRUST act is a good first step towards building better relationships between community members and police departments.</p>
+        <div>
+        <img class="decoration" src="assets/trust-act.jpg">
+        <sup class="citation">9</sup>
+      </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <script>
+      new Vue({ 
+        el: '#app',
+        data: {
+          states: ['Alabama','Alaska','Arizona','Arkansas','California','Colorado',
+         'Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho', 
+         'Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana',
+         'Maine', 'Maryland','Massachusetts','Michigan','Minnesota',
+         'Mississippi', 'Missouri','Montana','Nebraska','Nevada',
+         'New Hampshire','New Jersey','New Mexico','New York',
+         'North Carolina','North Dakota','Ohio',    
+         'Oklahoma','Oregon','Pennsylvania','Rhode Island',
+         'South Carolina','South Dakota','Tennessee','Texas','Utah',
+         'Vermont','Virginia','Washington','West Virginia',
+         'Wisconsin','Wyoming', 'District of Columbia'],
+         show: false
+        },
+        methods: {
+          format: function(string) {
+            return string.replace(/\s+/g, '-').toLowerCase()
+          }
+        },
+        updated: function() {
+          window.scroll(0, 700)
+        }
+      })
+    </script>
+  </body>
+</html>
