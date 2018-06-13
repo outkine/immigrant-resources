@@ -56,6 +56,10 @@ body {
     text-align: center;
     padding: 10px; }
 
+p {
+  font-size: 20px;
+  margin-bottom: 15px; }
+
 button {
   border: 5px solid white;
   border-radius: 20px;
@@ -107,3 +111,95 @@ h2 {
 
 .buttons > * {
   display: inline-block; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  padding: 0 400px; }
+  header h1 {
+    margin: 0; }
+  header img {
+    height: 70px; }
+
+.content {
+  padding: 30px 400px;
+  background: white;
+  color: black; }
+
+.timeline {
+  margin-top: 50px;
+  margin-bottom: 250px;
+  display: flex;
+  height: 1000px; }
+  .timeline .drawing {
+    padding-right: 10px;
+    border-right: 3px solid black; }
+    .timeline .drawing > * {
+      position: relative;
+      display: flex;
+      align-items: center; }
+    .timeline .drawing .date {
+      font-weight: bold; }
+    .timeline .drawing .mark {
+      width: 30px;
+      height: 3px;
+      background: black; }
+  .timeline .tiles {
+    flex: 1 0 50%;
+    margin-right: 20px; }
+  .timeline .tile {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0 0 20px 3px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    position: relative;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+    .timeline .tile:hover {
+      box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25); }
+    .timeline .tile .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+    .timeline .tile.act {
+      border-top: 6px solid #f96681; }
+    .timeline .tile.court {
+      border-top: 6px solid #6294d0; }
+    .timeline .tile.amendment {
+      border-top: 6px solid #e0c35b; }
+  .timeline .tile:hover {
+    z-index: 10; }
+
+.quote {
+  margin: 30px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0 0 20px 3px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.4s;
+  padding: 20px; }
+  .quote:hover {
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25); }
+  .quote img {
+    width: 20px;
+    margin-bottom: 10px; }
+
+.brief {
+  margin: 30px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0 0 20px 3px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.4s;
+  padding: 20px;
+  border-top: 6px solid #f96681; }
+  .brief:hover {
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25); }
+  .brief .title {
+    font-weight: bold;
+    margin-top: 0; }
+  .brief p {
+    margin-bottom: 5px;
+    margin-top: 10px; }
+
+li {
+  font-size: 15px; }

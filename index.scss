@@ -26,6 +26,11 @@ body {
   border-radius: $radius;
 }
 
+p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
 button {
   @include border;
   background: none;
@@ -94,5 +99,125 @@ h2 {
   & > * {
     display: inline-block;
   }
-  // display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  padding: 0 400px;
+  h1 {
+    margin: 0;
+  }
+  img {
+    height: 70px;
+  }
+}
+
+.content {
+  padding: 30px 400px;
+  background: white;
+  color: black;
+}
+
+@mixin shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0 0 20px 3px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.4s;
+  &:hover {
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.timeline {
+  margin-top: 50px;
+  margin-bottom: 250px;
+  display: flex;
+
+  height: 1000px;
+
+  .drawing {
+    & > * {
+      // margin-bottom: 300px;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .date {
+      font-weight: bold;
+    }
+
+    .mark {
+      width: 30px;
+      height: 3px;
+      background: black;
+    }
+
+    padding-right: 10px;
+    border-right: 3px solid black;
+  }
+
+  .tiles {
+    flex: 1 0 50%;
+    margin-right: 20px;
+  }
+
+  .tile {
+    @include shadow;
+    position: relative;
+    background: white;
+    margin: 10px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    padding: 10px;
+    width: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    &.act {
+      border-top: 6px solid #f96681;
+    }
+    &.court {
+      border-top: 6px solid #6294d0;
+    }
+    &.amendment {
+      border-top: 6px solid #e0c35b;
+    }
+  }
+  .tile:hover {
+    z-index: 10;
+  }
+}
+
+.quote {
+  margin: 30px 0;
+  @include shadow;
+  padding: 20px;
+  img {
+    width: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.brief {
+  margin: 30px 0;
+  @include shadow;
+  padding: 20px;
+  border-top: 6px solid #f96681;
+  .title {
+    font-weight: bold;
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+}
+
+li {
+  font-size: 15px;
 }
